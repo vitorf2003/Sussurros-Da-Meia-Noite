@@ -1,0 +1,868 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white-color: #fff;
+    --gray-color: #8b8b8b;
+    --gap: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.main-background {
+    background-image: url(../img/main.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.6); /* overlay escuro */
+    background-blend-mode: darken;
+}
+
+.main-white-background {
+    background-color: #f4f1ec;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: var(--gray-color);
+}
+
+.menu ul li a:hover {
+    transition: all 300ms ease-in-out;
+    background-color: rgba(22, 21, 21, 0.5);
+}
+
+.menu h1 {
+    padding-left: 20px;
+    color: var(--red-color);
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.button-terror {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: crimson;
+    border: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 0 10px crimson;
+}
+
+.button-terror:hover {
+    background-color: darkred;
+    box-shadow: 0 0 20px red;
+}
+
+.button-sobre-dois {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: crimson;
+    border: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 0 10px crimson;
+}
+
+.button-sobre-dois:hover {
+    background-color: darkred;
+    box-shadow: 0 0 20px red;
+}
+
+.button-sobre-tres {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: crimson;
+    border: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 0 10px crimson;
+}
+
+.button-sobre-tres:hover {
+    background-color: darkred;
+    box-shadow: 0 0 20px red;
+}
+
+.button-voltar {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: crimson;
+    border: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 0 10px crimson;
+}
+
+.button-voltar:hover {
+    background-color: darkred;
+    box-shadow: 0 0 20px red;
+}
+
+.intro {
+    text-align: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+header h1 {
+    margin-top: -130px;
+}
+
+.intro h1 {
+    font-family: 'Creepster', cursive;
+    color: rgb(131, 1, 27);
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-family: 'Creepster', cursive;
+    color: var(--gray-color);
+}
+
+.titulo-sobre {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 55px;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.p-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    min-height: 5vh;
+}
+
+.titulo-sobre-dois {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grid-template-columns: repeat(3, 1fr);*/
+    gap: 20px;
+}
+
+.sobre-grid-principal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-sobre-dois-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-sobre-tres-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.sobre-grid-conteudo {
+    width: 800px;
+    height: 280px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #000;
+}
+
+.titulo-sobre-dois-subgeneros {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.titulo-sobre-dois-subgeneros-obras {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.subgenero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 16px;
+    height: 8vh;
+}
+
+.subgenero-dois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 16px;
+    height: 2px;
+}
+
+.titulo-filmes {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 55px;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    min-height: 26vh;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: crimson;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    border: 0.2rem solid;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: darkred;
+    box-shadow: 0 0 20px red;
+}
+
+.conteudo-um {
+    align-items: center;
+    margin-top: 0px;
+}
+
+.conteudo-dois {
+    align-items: center;
+    margin-top: 0px;
+}
+
+.logo-filme-um {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-filme-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.1px;
+    margin-bottom: 12px;
+    font-family: 'Creepster', cursive;
+}
+
+.info-filme-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.titulo-sinopse-filme-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive;
+}
+
+.sinopse-filme-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo-filme-dois {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-filme-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    font-family: 'Creepster', cursive;
+}
+
+.info-filme-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.titulo-sinopse-filme-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive;
+}
+
+.sinopse-filme-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo-filme-tres {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-filme-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    font-family: 'Creepster', cursive;
+}
+
+.info-filme-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.titulo-sinopse-filme-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive;
+}
+
+.sinopse-filme-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo-serie-um {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-serie-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.1px;
+    margin-bottom: 12px;
+    font-family: 'Creepster', cursive;
+}
+
+.info-serie-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.titulo-sinopse-serie-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive;
+}
+
+.sinopse-serie-um {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo-serie-dois {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-serie-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    font-family: 'Creepster', cursive;
+}
+
+.info-serie-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.titulo-sinopse-serie-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive;
+}
+
+.sinopse-serie-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo-serie-tres {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-serie-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    font-family: 'Creepster', cursive;
+}
+
+.info-serie-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.titulo-sinopse-serie-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive;
+}
+
+.sinopse-serie-tres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.nothing-bg {
+    background-color: #111111;
+}
+
+.texto-nothing-um {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    font-family: 'Creepster', cursive;
+}
+
+.texto-nothing-dois {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Creepster', cursive;
+}
+
+.texto-nothing-tres {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Creepster', cursive;
+}
+
+.button-voltar-meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-series {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 55px;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    min-height: 26vh;
+}
+
+.titulo-livros {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 55px;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    min-height: 26vh;
+}
+
+.tres-colunas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 3fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.coluna {
+    border-radius: 12px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.coluna-imagem {
+    border-radius: 8px;
+    margin-bottom: 25px;
+    object-fit: cover;
+}
+
+.livro-titulo {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.livro-titulo-sinopse {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Creepster', cursive;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.footer {
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer-fundo {
+    background-color: #000;
+}
+
+.footer-p-um {
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+
+.aparicao-lenta {
+    opacity: 0;
+    animation: spookyFade 3s ease forwards;
+}
+
+@keyframes spookyFade {
+    0% { opacity: 0; letter-spacing: 10px; }
+    100% { opacity: 1; letter-spacing: 2px; }
+}
+
+.nothing-tv-static {
+  position: fixed;
+  top: 0; left: 0;
+  background: url('../img/static.gif') no-repeat center center;
+  width: 100%; height: 100%;
+  background-size: cover;
+  z-index: 9999;
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.nothing-glitch {
+  position: relative;
+  color: crimson;
+  font-size: 2.5rem;
+  text-shadow: 2px 0 red, -2px 0 blue;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; }
+  40% { text-shadow: 2px 2px red, -2px -2px blue; }
+  60% { text-shadow: -2px 2px red, 2px -2px blue; }
+  80% { text-shadow: 2px -2px red, -2px 2px blue; }
+  100% { text-shadow: none; }
+}
+
+
+/*Modificações para o mobile*/
+
+@media (max-width: 768px) {
+    /* Menu */
+    .menu-content {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu ul li a {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu ul li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Seção de Introdução */
+    .logo img {
+        max-width: 80%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .intro h1 {
+        font-size: 2rem;
+        margin-top: -50px;
+    }
+    .intro p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    /* Seção Sobre */
+    .titulo-sobre, .titulo-sobre-dois {
+        font-size: 35px;
+        min-height: 15vh;
+        padding: 20px 0;
+    }
+    .titulo-sobre-dois-subgeneros h3 {
+        font-size: 35px;
+        min-height: 15vh;
+        padding: 20px 0;
+    }
+    .titulo-sobre-dois-subgeneros-obras {
+        font-size: 35px;
+        min-height: 32vh;
+        padding: 20px 0;
+    }
+    .p-sobre, .subgenero p {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .subgenero-dois {
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .subgenero-dois-info {
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 1px;
+    }
+    .sobre-grid-conteudo {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .sobre-grid {
+        grid-template-columns: 1fr;
+    }
+    .button-sobre-tres-principal {
+        padding-top: 122px;
+    }
+
+    /* Seções de Filmes, Séries e Livros */
+    .titulo-filmes, .titulo-series, .titulo-livros {
+        font-size: 35px;
+        min-height: 15vh;
+        padding: 20px 0;
+    }
+    .conteudo-um, .conteudo-dois, .conteudo-tres {
+        padding: 20px 0;
+    }
+    .logo-filme-um, .logo-filme-dois, .logo-filme-tres,
+    .logo-serie-um, .logo-serie-dois, .logo-serie-tres,
+    .coluna-imagem {
+        max-width: 90%;
+        height: auto;
+    }
+    .info-filme-um, .info-filme-dois, .info-filme-tres,
+    .info-serie-um, .info-serie-dois, .info-serie-tres,
+    .sinopse-filme-um, .sinopse-filme-dois, .sinopse-filme-tres,
+    .sinopse-serie-um, .sinopse-serie-dois, .sinopse-serie-tres,
+    .livro-sinopse {
+        text-align: left;
+        padding: 0 15px;
+        margin-top: 10px;
+    }
+    .sinopse-filme-um br, .sinopse-filme-dois br, .sinopse-filme-tres br,
+    .sinopse-serie-um br, .sinopse-serie-dois br, .sinopse-serie-tres br,
+    .livro-sinopse br {
+        display: none;
+    }
+    .tres-colunas {
+        grid-template-columns: 1fr;
+    }
+    .coluna {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .livro-titulo, .livro-titulo-sinopse {
+        text-align: center;
+    }
+
+    /* Nothing page */
+    .texto-nothing-um, .texto-nothing-dois, .texto-nothing-tres {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+    .texto-nothing-um {
+        margin-top: 150px;
+    }
+    .button-voltar {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+    .intro p {
+        font-size: 0.9rem;
+    }
+    .button-terror {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .titulo-sobre, .titulo-sobre-dois, .titulo-sobre-dois-subgeneros,
+    .titulo-filmes, .titulo-series, .titulo-livros {
+        font-size: 28px;
+    }
+    .texto-nothing-um, .texto-nothing-dois, .texto-nothing-tres {
+        font-size: 1.2rem;
+    }
+}
