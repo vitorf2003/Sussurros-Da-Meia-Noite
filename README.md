@@ -1,6 +1,6 @@
 # Sussurros da Meia-Noite 🌃
 
-![Imagem de capa do site Sussurros da Meia-Noite](assets/img/main.jpeg)
+![Imagem de capa do site Sussurros da Meia-Noite](assets/img/logo.png)
 
 > Uma landing page imersiva com temática de terror, dedicada aos amantes do gênero. Explore listas selecionadas dos melhores filmes, séries e livros que vão te deixar acordado à noite.
 
